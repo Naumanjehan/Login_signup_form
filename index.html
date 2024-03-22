@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        
+        #login {width:130px;}
+        #Signup {width:120px; }
+    </style>
+    <title>2 in 1</title>
+</head>
+<body class="bg-light">
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-lg-4">
+            </div>
+            <div class="col-lg-3 bg-white pt-3 rounded-top rounded-bottom wrapper-top">
+                <p class="h2 text-center">Signup Form</p>
+                <br>
+                <form action="#" id="Signupfun">
+                    
+                        <button class="btn btn-info" id="login" onclick="showHiddenForm('loginfun')">Login  </button>
+                        <button class="btn btn-primary" id="Signup" onclick="showHiddenForm('Signupfun')">Signup</button>
+                        <br><br>
+
+                    <div class="input-group mb-4">
+                       <input  type="text" class="form-control" placeholder="Name" id="name">
+                    </div>
+                    <div class="input-group mb-4">
+                       <input type="text" class="form-control" placeholder="Email" id="email">
+                    </div>
+                    <div class="input-group mb-4">
+                       <input type="password" class="form-control" placeholder="Password" id="password">
+                    </div>
+                    <div class="input-group mb-4">
+                       <input type="password" class="form-control" placeholder="Confirm Passward" id="con-pass">
+                    </div>
+                    <div class="d-grid">
+                        <button class="btn btn-primary" type="submit" onclick="signup()">Signup</button>
+                    </div> 
+                    <br>
+                    <div class="input-group mb-4">
+                        <span>Already have an account?</span>
+                            <span>click on login above</span> 
+                    </div>
+                </form>
+
+                <form action="#" id="loginfun" style="display: none;">
+                    
+                    <button class="btn btn-info" id="login" onclick="showHiddenForm('loginfun')">Login  </button>
+                    <button class="btn btn-primary" id="Signup" onclick="showHiddenForm('Signupfun')">Signup</button>
+                    <br><br>
+
+                
+                <div class="input-group mb-4">
+                   <input type="Email" class="form-control" placeholder="Email" id="email">
+                </div>
+                <div class="input-group mb-4">
+                   <input type="password" class="form-control" placeholder="Passward" id="passward">
+                </div>
+                
+                <div class="d-grid">
+                    <button class="btn btn-primary" type="submit" onclick="loginf()">Login</button>
+                </div> 
+                <br>
+                <div class="input-group mb-4">
+                    <p>Don't have an account? <strong style="color: blue;">Signup</strong> </p>
+                </div>
+            </form>
+            </div>
+        </div>
+    </div>
+    <SCript src="js/bootstrap.bundle.min.js"></SCript>
+    <script src="/index.js"></script>
+</body>
+</html>
